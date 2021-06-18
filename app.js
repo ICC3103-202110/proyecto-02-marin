@@ -1,6 +1,8 @@
 const {printTable} = require("console-table-printer")
 const {getTitle} = require("./view")
 const {inputForm} = require("./view")
+const {updateC} =  require("./update")
+
 
 async function app(state, update, view){
     while (true){
@@ -19,6 +21,7 @@ async function app(state, update, view){
             ...state,
             model: updatedModel,
             currentView: view(updatedModel)
+            
         }
     }
 }

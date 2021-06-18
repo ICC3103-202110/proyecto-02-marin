@@ -1,5 +1,5 @@
 const {initModel} = require("./model")
-const {update} =  require("./update")
+const {update,updateC} =  require("./update")
 const {view} = require("./view")
 const {app} = require("./app")
 
